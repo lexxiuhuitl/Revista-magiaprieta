@@ -8,27 +8,185 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "gloucester_mt_extra_condensRg";
 }
 
 body {
   width: 100%;
   height: auto;
-  background: #3f3e79;
+  background: #000000;
   display: block;
+  color: white;
+  overflow: hidden;
+  background: blue;
 }
 body .general {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: red;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: green;
+}
+body .general .logo {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  z-index: 1000;
+  transition: 300ms;
+  top: 20px;
+  animation: appear 1500ms;
 }
 body .general .header {
+  top: 0;
   width: 100%;
+  min-width: 200px;
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  gap: 15vh;
+  overflow: hidden;
 }
-body .general .header h1 {
-  width: 50%;
+body .general .header.gone {
+  animation: gone 3000ms ease-in-out;
+}
+body .general .header.hide {
+  display: none;
+}
+body .general .header .screen {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: up 800ms ease-in-out;
+}
+body .general .header .screen img {
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  height: 100vh;
+}
+body .general .header .slogan {
+  background: transparent;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 40%;
+}
+body .general .header .slogan p {
+  color: #ffffff;
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  animation: on 7000ms ease-in-out;
+}
+body .general .header .slogan p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .general .header .getdown {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  bottom: 15%;
+  animation: godown 7000ms ease-in-out;
+}
+body .general .header .getdown .dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+body .general .hub {
+  background: red;
+  width: 20%;
 }
 
+@keyframes godown {
+  0% {
+    gap: 0px;
+  }
+  40% {
+    gap: 50px;
+    transform: rotate(-2000deg);
+  }
+  80% {
+    gap: 0px;
+    transform: rotate(0deg);
+  }
+  100% {
+    gap: 30px;
+  }
+}
+@keyframes on {
+  0% {
+    gap: 30px;
+  }
+  40% {
+    gap: 10px;
+  }
+  100% {
+    gap: 50px;
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: rotate(-5deg) translate(0px, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+@keyframes gone {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  10% {
+    transform: rotate(-5deg) translate(0px, 0px);
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(0deg) translate(0px, -1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, -1000px);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 20px;
+  }
+}
 /*
 main {
     position: relative;
