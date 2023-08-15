@@ -1,111 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSE96DSETS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NSE96DSETS');
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon" />
-    <title>Revista Magia Prieta</title>
+    <title>Descarga Magia Prieta</title>
   </head>
   <body>
-    <div class="general">
-      <img src="./img/head.png" class="logo" alt="" />
+    <div class="intro" id="intro">
+      <img src="./img/logo.jpg" class="mt-logo" alt="" />
+      <div class="screen">
+        <img src="./img/notat.jpg" alt="" />
+      </div>
+      <div class="slogan">
+        <p>ARTES OSCURAS DE MÉXICO</p>
+      </div>
+    </div>
 
-      <header class="header hide" id="head">
-        <div class="screen">
-          <img src="./img/notat.jpg" alt="" />
+    <main class="main hide" id="main">
+      <header class="header" id="header">
+        <div class="gradient"></div>
+        <div class="logo__box">
+          <img src="./img/head.png" alt="Magia Prieta" class="logo__mp" />
         </div>
-        <div class="slogan">
-          <p>
-            <span class="on">Artes</span><span class="tw">Oscuras</span
-            ><span class="tr">de</span><span class="fo">México</span>
+        <div class="editorial-web">
+          <h3 class="bienvenidx">¡Bienvenid<span id="x">x</span>!</h3>
+          <p class="herramienta">
+            Creemos que el arte es una herramienta para el cambio social y
+            político. Por tal importancia nuestra revista digital siempre será
+            gratuita
           </p>
+          <p class="apoyo">*aunque siempre podrás <a href="https://patreon.com/metroteotihuacan?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link"
+          class="clickApoyo"
+          target="_blank"
+          >apoyarnos</a> 
+          si así lo deseas</p>
         </div>
-
-        <div class="getdown">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
+        <a href="#magazine" class="arrow"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 30"
+            fill="#760075"
+            x="0px"
+            y="0px"
+            width="120"
+            height="120"
+            class="flecha"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.46447 22.4645C8.27316 22.2732 8.16753 22.0125 8.17169 21.742L8.26008 15.9967C8.26858 15.4445 8.72312 15.0037 9.27534 15.0122C9.82756 15.0207 10.2683 15.4753 10.2598 16.0275L10.2094 19.3051C10.7594 18.745 11.1153 17.9788 11.5103 17.0378C12.7418 14.1038 15.4115 13.6194 17.3456 13.2685C17.5911 13.2239 17.8247 13.1816 18.042 13.1366C19.1117 12.9152 19.8149 12.6628 20.2631 12.1836C20.6754 11.7428 21.0415 10.9137 20.9024 9.10613C20.8601 8.55548 21.2721 8.07474 21.8228 8.03238C22.3735 7.99002 22.8542 8.40208 22.8965 8.95274C23.0573 11.0426 22.6745 12.5334 21.7237 13.5499C20.8088 14.5279 19.5347 14.8701 18.4473 15.0951C18.1781 15.1508 17.9162 15.2015 17.662 15.2508C15.6639 15.6379 14.1432 15.9325 13.3544 17.8118C12.9702 18.7272 12.4868 19.8461 11.6235 20.7195L14.9014 20.6691C15.4537 20.6606 15.9082 21.1014 15.9167 21.6536C15.9252 22.2058 15.4844 22.6604 14.9322 22.6689L9.18695 22.7572C8.91644 22.7614 8.65577 22.6558 8.46447 22.4645Z"
+            />
+          </svg></a
+        >
       </header>
 
+      <div class="magazine" id="magazine">
+        <nav class="navBar">
+          <p>Escoge tu revista y luego da click en la portada</p>
+          <table class="revistasMenu">
+            <tr id="seleccion">
+              <th class="btn activo" id="btnUno">1</th>
+              <th class="btn pasivo" id="btnDos">2</th>
+              <!--Aquí va a ir el numero 3-->
+              <!--<th class="btn pasivo" id="btnTres">3</th>-->
+            </tr>
+          </table>
+        </nav>
 
-      <div class="hub">
-        <div class="btnaa artistas">Artistas</div>
-        <div class="btnaa inicio active">Inicio</div>
-        <div class="btnaa descarga">Descargas</div>
-      </div>
-
-      <div class="contenedor">
-        <div class="contenido visible">
-          Aquí va el Inicio
-          Blogs, resumenes, promoción de los videos
-        </div>
-        <div class="contenido oculto">
-          Aquí van las descargas
-        </div>
-
-        <div class="contenido oculto">
-          Aquí van los artistas
-        </div>
-      </div>
-      
-    <!--
-    <main>
-      <header class="header">
-        <img src="./img/crimson.png" class="dec one" />
-        <a class="logo"><img src="./img/head.png" /></a>
-        <img src="./img/crimson.png" class="dec two" />
-      </header>
-      <section class="section">
-        <h2>
-          Descarga gratis las publicaciones de Magia Prieta<br />
-          <span>da click en la imagen</span>
-        </h2>
-        <div class="revs">
-          <div class="des">
+        <div class="revistasBox">
+          <div class="revista uno activo" id="revistaUno">
             <a
-              href="https://drive.google.com/file/d/1_NjpgrbgPXxOA67G3q6U5DhkQuBegIZZ/view?usp=share_link"
-              target="_blank"
-              class="link"
-            >
-              <img src="./img/primera.jpg" alt="magia prieta 1" class="img" />
-              <h3>Magia Prieta Número 1</h3></a
-            >
+              href="./pdf/MAGIA PRIETA 1 Punk y Xochipilli.pdf"
+              download
+              ><img src="./img/primera.jpg" alt=""
+            /></a>
           </div>
-          <div class="des">
-            <a href="https://drive.google.com/file/d/1NfFic5eIxI3XEOMqs15CH3uLWfb1LOqS/view?usp=share_link" target="_blank" class="link">
-              <img src="./img/segunda.jpg" alt="magia prieta 2" class="img" />
-              <h3>Magia Prieta Número 2</h3></a
-            >
+          <div class="revista dos pasivo" id="revistaDos">
+            <a
+              href="./pdf/MAGIA PRIETA 2 Folk y Xolotl.pdf"
+              download
+              ><img src="./img/segunda.jpg" alt=""
+            /></a>
+          </div>
+          <!--<div class="revista tres pasivo" id="revistaTres">
+            <p>Revista en proceso de creación... <br>Discúlpa las molestias :&#40</p></a>
+          </div>-->
+        </div>
+
+        <a href="#hero" class="arrow"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 30"
+            fill="#760075"
+            x="0px"
+            y="0px"
+            width="50"
+            height="50"
+            class="flecha"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.46447 22.4645C8.27316 22.2732 8.16753 22.0125 8.17169 21.742L8.26008 15.9967C8.26858 15.4445 8.72312 15.0037 9.27534 15.0122C9.82756 15.0207 10.2683 15.4753 10.2598 16.0275L10.2094 19.3051C10.7594 18.745 11.1153 17.9788 11.5103 17.0378C12.7418 14.1038 15.4115 13.6194 17.3456 13.2685C17.5911 13.2239 17.8247 13.1816 18.042 13.1366C19.1117 12.9152 19.8149 12.6628 20.2631 12.1836C20.6754 11.7428 21.0415 10.9137 20.9024 9.10613C20.8601 8.55548 21.2721 8.07474 21.8228 8.03238C22.3735 7.99002 22.8542 8.40208 22.8965 8.95274C23.0573 11.0426 22.6745 12.5334 21.7237 13.5499C20.8088 14.5279 19.5347 14.8701 18.4473 15.0951C18.1781 15.1508 17.9162 15.2015 17.662 15.2508C15.6639 15.6379 14.1432 15.9325 13.3544 17.8118C12.9702 18.7272 12.4868 19.8461 11.6235 20.7195L14.9014 20.6691C15.4537 20.6606 15.9082 21.1014 15.9167 21.6536C15.9252 22.2058 15.4844 22.6604 14.9322 22.6689L9.18695 22.7572C8.91644 22.7614 8.65577 22.6558 8.46447 22.4645Z"
+            />
+          </svg></a
+        >
+      </div>
+
+      <div class="hero" id="hero">
+        <h3>
+          Este proyecto es una iniciativa de
+          <a href="#">Metro Teotihuacan</a>
+        </h3>
+        <p>
+          Somos un colectivo de artistas independientes buscando difundir el valor del arte popular en México
+        </p>
+      </div>
+      <div class="siguenos">
+        <div class="boxx">
+          <p class="boxxText">Otros proyectos</p>
+          <div class="items own">
+            <a
+            href="https://youtube.com/@tezeractumrecords"
+            target="_blank">
+              <img
+                class="tezeractvm"
+                src="./img/tezeractvm.jpg"
+                alt="Tezeractvm Records"
+              />
+              <p>TEZERACTVM RECORDS</p>
+            </a>
+            <a
+            href="https://youtube.com/@metroteotihuacan"
+            target="_blank">
+              <img class="metro" src="./img/logo.jpg" alt="Metro Teotihuacan" />
+              <p>METRO TEOTIHUACAN</p>
+            </a>
           </div>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="colectivo izq">
-          <a href="https://www.youtube.com/@metroteotihuacan" target="_blank">
-            <h5>Metro Teotihuacan</h5>
-            <img src="./img/favicon.jpg" />
-            <p>Artes oscuras de México</p>
-          </a>
+
+        <div class="boxx">
+          <p class="boxxText">Nuestras redes</p>
+          <div class="items">
+            <a
+            href="https://www.youtube.com/@revistamagiaprieta"
+            target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="2em"
+                viewBox="0 0 576 512"
+                class="youtube"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  fill="#FF0000"
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                />
+              </svg>
+            </a>
+           
+            <a
+            href="https://www.instagram.com/revista.magiaprieta/"
+            target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="2em"
+                viewBox="0 0 448 512"
+                class="instagram"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  fill="#C13584"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+            <a
+            href="https://www.facebook.com/people/Revista-Magia-Prieta/100064883113516/"
+            target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="2em"
+                viewBox="0 0 512 512"
+                class="facebook"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  fill="#4267B2"
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                />
+              </svg>
+            </a>
+            <a 
+            href="https://www.tiktok.com/@revistamagiaprieta"
+            target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="2em"
+                viewBox="0 0 448 512"
+                class="tiktok"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  fill="#ff0050"
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="fin">
-          <p>
-            Revista Magia Prieta es una iniciativa de Metro Teotihuacan<br />
-            colectivo artístico interdisciplinario de México
-          </p>
-        </div>
-        <div class="colectivo der">
-          <a href="https://www.youtube.com/@tezeractumrecords" target="_blank">
-            <h5>Tezeractvm Records</h5>
-            <img src="./img/tezeractvm.jpg" />
-            <p>Música forjada en el mictlán</p>
-          </a>
-        </div>
-      </footer>
+      </div>
     </main>
-  -->
     <script src="./js/scriptaa.js"></script>
   </body>
 </html>
