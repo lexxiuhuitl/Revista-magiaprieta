@@ -1,4 +1,4 @@
-const intro = document.getElementById("intro");
+//const intro = document.getElementById("intro");
 const main = document.getElementById("main");
 
 function retrasoMain() {
@@ -6,18 +6,18 @@ function retrasoMain() {
   main.classList.add("appear");
 }
 
-function retrasoHide() {
+/*function retrasoHide() {
   intro.classList.add("hide");
 }
 
 function retrasoGone() {
   intro.classList.add("gone");
   setTimeout(retrasoHide, 900);
-}
+}*/
 
 function init() {
-  setTimeout(retrasoGone, 1500);
-  setTimeout(retrasoMain, 1800);
+  //setTimeout(retrasoGone, 1500);
+  setTimeout(retrasoMain, 800); //cambiar a 1800
 }
 window.addEventListener("load", init);
 
